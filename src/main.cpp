@@ -73,7 +73,7 @@ void moveStepper(float pDegree, float pDegree_old, float pFactor, int pDelayMill
     Serial.println("for_new: " + String(for_new));
     if (for_old != for_new) {
       bool direction = true;
-      if (pIntDirection == 0) {
+      if (pIntDirection == -1) {
         direction = false;
       }
       if (for_new < for_old) {
